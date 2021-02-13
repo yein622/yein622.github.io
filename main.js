@@ -47,7 +47,6 @@ function centuryFromYear(year) {
 let my_array = ["ab", "cd", "ef", "gh", "ijk", "lmn"];
 let my_array_2 = [3, 6, 9 ,12, 15, 18, 21];
 
-console.log(my_array_2);
 
 for(let i=0; i < my_array_2.length; i++){
 	console.log("Before code: i = "+i+" element = "+my_array_2[i]);
