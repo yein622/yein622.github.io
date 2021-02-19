@@ -61,6 +61,10 @@ a{
 	color: green;
 }
 
+.navbar-logo a{
+	position: flex;
+}
+
 .navbar-menu{
 	display: flex;
 	list-style-type: none;
