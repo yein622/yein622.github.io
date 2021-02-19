@@ -62,7 +62,7 @@ a{
 }
 
 .navbar-logo a{
-	display: flex;
+	flex-flow: column wrap;
 }
 
 .navbar-menu{
