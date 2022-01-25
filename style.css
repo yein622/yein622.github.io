@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
 
+/* Custom properties/variables  */
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
 
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body,
@@ -25,7 +35,6 @@ dd {
 }
 
 body {
-	scroll-behavior: smooth;
 	line-height: 1.5;
 	background-color: #FFF;
 }
@@ -52,10 +61,32 @@ button {
 	background-color: transparent;
 }
 
-// The code
 
 body {
-	font-family: "DM Sans", sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+
+.uniforms-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.map-section{
+	text-align: center;
+	padding: 10rem 2rem;
+	background: var(--main-blue);
+}
+
+.contact-section{
+	text-align: center;
+	padding: 10rem 2rem;
+	background: var(--main-white);
 }
 
 .school-list{
@@ -104,17 +135,23 @@ body {
 	margin-right: auto;
 }
 
-.header {
-	border-bottom: 1px solid #d0d0d0;
+.navbar {
+	/*border-bottom: 1px solid #d0d0d0;*/
 	min-height: 60px;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	display: flex;
-	justify-content: center;
-	/*background-color: #000080;*/
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+	z-index: 10;
 }
 
-.header-content {
+.navbar-content {
 	display: flex;
 	width: 100%;
 	max-width: 2000px;
@@ -124,14 +161,18 @@ body {
 	justify-content: space-between;
 }
 
-.header-navigation {
+.navbar-list {
 	display: flex;
 	list-style-type: none;
 	align-items: center;
 }
 
-.header-navigation li{
+.navbar-list li{
 	padding: 8px 12px;
+}
+
+.navbar-list li:hover {
+  background: var(--main-blue);
 }
 
 .link-button {

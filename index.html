@@ -4,26 +4,32 @@
 <!-- header with search & dropdown -->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
-  <script src="https://kit.fontawesome.com/5cef87ee21.js" crossorigin="anonymous"></script>
-  <title>T&B</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+	<script src="https://kit.fontawesome.com/5cef87ee21.js" crossorigin="anonymous"></script>
+	<title>T&B</title>
 </head>
 <body>
-<header class="header">
-	<div class="header-content">
-		<div class="header-logo">
+
+<!-- 네비게이션 바 시작-->
+
+<header class="navbar">
+	<div class="navbar-content">
+		<div class="navbar-logo">
 			<a href="index.html"><h1 class="logo">T&B School Uniforms</h1></a>
 		</div>
-		<nav class="header-navigation">
-			<li><a href="#profile-section">Map</a></li>
+		<nav class="navbar-list">
+			<li><a href="#uniforms-section">Uniforms</a></li>
+			<li><a href="#map-section">Map</a></li>
 			<li><a href="#contact-section">Contact</a></li>
 		</nav>
 	</div>
 </header>
+<!-- 네비게이션 바 끝-->
 
+<section id="uniforms-section" class="uniforms-section">
 	<ul class="school-list">
 		<li><a href="tulsa_legacy.html">
 			<div class="school-logo">
@@ -33,7 +39,7 @@
 				Tulsa Legacy
 			</div>
 		</a></li>
-		<li><a href="tulsa_legacy.html">
+		<li><a href="kipp.html">
 			<div class="school-logo">
 				<img src="image/kipp_logo.png" alt="!image not found">
 			</div>
@@ -41,7 +47,7 @@
 				Kipp School
 			</div>
 		</a></li>
-		<li><a href="tulsa_legacy.html">
+		<li><a href="drexel.html">
 			<div class="school-logo">
 				<img src="image/drexel_logo.png" alt="!image not found">
 			</div>
@@ -50,6 +56,14 @@
 			</div>
 		</a></li>
 	</ul>
+</section>
+
+<section id="map-section" class="map-section">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206177.67880507026!2d-96.02659859394794!3d36.153747203653765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b6eec9016d7e43%3A0x6b59f12abe471de4!2sTops%20%26%20Bottoms%20-%20School%20Uniforms!5e0!3m2!1sen!2sus!4v1643079828121!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+	</iframe>
+</section>
+<section id="contact-section" class="contact-section">
+</section>
 
 
 </body>
